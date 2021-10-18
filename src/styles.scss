@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.btn-primary.btn-main-color {
+    background-color: #1c5b7a;
+    border-color: #1c5b7a;
+}
+
+.btn-primary.btn-main-color:focus,
+.btn-primary.btn-main-color:active,
+.btn-primary.btn-main-color:hover {
+    background-color: #1a506b;
+    border-color: #1a506b;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-outline-primary.btn-main-color {
+    border-color: #1a506b;
+    color: #1a506b;
+}
+
+.toast-container .ngx-toastr {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+    border-radius: 3px 3px 3px 3px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    box-shadow: 0 0 12px #999999;
+    color: #444657;
+    border-left: 8px solid #ff647c;
+    font-size: 14px;
+}
+
+.toast-error {
+    background-color: #fff;
+}
+
+.toast-error {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQ5NiA0OTYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmY2NDdjO30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjI0OCIgY3k9IjI0OCIgcj0iMjQ4Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzc3LjYsMzIxLjFhMTIsMTIsMCwwLDEsMCwxN0wzMzgsMzc3LjZhMTIsMTIsMCwwLDEtMTcsMEwyNTYsMzEybC02NS4xLDY1LjZhMTIsMTIsMCwwLDEtMTcsMEwxMzQuNCwzMzhhMTIsMTIsMCwwLDEsMC0xN0wyMDAsMjU2bC02NS42LTY1LjFhMTIsMTIsMCwwLDEsMC0xN0wxNzQsMTM0LjNhMTIsMTIsMCwwLDEsMTcsMEwyNTYsMjAwbDY1LjEtNjUuNmExMiwxMiwwLDAsMSwxNywwTDM3Ny43LDE3NGExMiwxMiwwLDAsMSwwLDE3TDMxMiwyNTZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOCAtOCkiLz48L3N2Zz4=");
+}
+
+.toast-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #ff647c;
+    opacity: 0.4;
+}
+
+.toast-close-button {
+    position: relative;
+    right: -0.3em;
+    top: -0.3em;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444657;
+    text-shadow: 0 1px 0 #ffffff;
+    /* opacity: 0.8; */
+}
+
+@media (min-width: 1024px) {
+    .toast-container.toast-top-center .ngx-toastr,
+    .toast-container.toast-bottom-center .ngx-toastr {
+        width: 600px !important;
+    }
+}

@@ -1,0 +1,72 @@
+<app-consulta-cpf [cpf]="dados.cpf_cli"></app-consulta-cpf>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-4 px-5">
+    <div class="col-md-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Situação cadastral do CPF</h5>
+                <p class="card-text"><small class="text-muted">Consulta na Receita Federal</small></p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <fa-icon class="d-flex justify-content-center pt-1" style="color: gray; font-size: 24px;" [icon]="['far', 'user']"></fa-icon>
+                    </div>
+                    <div class="col-md-10">
+                        <label style="color: gray;">Nome</label>
+                        <p class="card-text" style="font-weight: bold;">{{dados.nome}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <fa-icon class="d-flex justify-content-center pt-1" style="color: green; font-size: 24px;" [icon]="['far', 'check-circle']"></fa-icon>
+                    </div>
+                    <div class="col-md-10">
+                        <label style="color: gray;">Situação do CPF</label>
+                        <p class="card-text" style="font-weight: bold;">{{dados.sit_cpf | titlecase}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card h-100">
+
+            <div class="card-body">
+                <h5 class="card-title">Conta aplicação</h5>
+                <p class="card-text"><small class="text-muted">Cooperativa ViaCredi</small></p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <fa-icon class="d-flex justify-content-center pt-1" style="color: gray; font-size: 24px;" [icon]="['far', 'credit-card']"></fa-icon>
+                    </div>
+                    <div class="col-md-10">
+                        <label style="color: gray;">Número da Conta</label>
+                        <p class="card-text" style="font-weight: bold;">{{dados.num_conta_aplicacao}}</p>
+                    </div>
+                </div>
+
+                <a class="text-left btn btn-link">Duplicar conta</a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card h-100">
+
+            <div class="card-body">
+                <h5 class="card-title">Conta Corrente</h5>
+                <p class="card-text"><small class="text-muted">Cooperativa ViaCredi</small></p>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <fa-icon class="d-flex justify-content-center pt-1" style="color: gray;font-size: 24px;" [icon]="['far', 'credit-card']"></fa-icon>
+                    </div>
+                    <div class="col-md-10">
+                        <label style="color: gray;">Número da Conta</label>
+                        <p class="card-text" style="font-weight: bold;">{{dados.num_conta_aplicacao}}</p>
+                    </div>
+                </div>
+                <a class="text-left btn btn-link">Duplicar conta</a>
+            </div>
+        </div>
+    </div>
+
+</div>

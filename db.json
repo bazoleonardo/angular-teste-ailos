@@ -1,0 +1,11 @@
+{
+    "contas": [{
+        "id": 1,
+        "nome": "Mariane de Sousa Oliveira",
+        "cpf_cli": "11122233344",
+        "sit_cpf": "regular",
+        "conta_aplicacao": "S",
+        "num_conta_aplicacao": "557932-4",
+        "num_conta_corrente": "778461-8"
+    }]
+}
